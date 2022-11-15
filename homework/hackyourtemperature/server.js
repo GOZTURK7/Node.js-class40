@@ -12,6 +12,7 @@ app.post('/weather', (req, res)=>{
     let cityName = req.body.cityName;
     console.log(cityName);
     res.send(cityName);
+    
 })
 
 app.listen(port, () => {
