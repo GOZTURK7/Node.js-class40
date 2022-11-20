@@ -10,8 +10,13 @@
  * - Print the entire response to the console to see how it is structured.
  */
 
-function printChuckNorrisJoke() {
+ import fetch from "node-fetch";
+
+async function printChuckNorrisJoke() {
   // YOUR CODE GOES IN HERE
+ let response = await fetch('https://api.chucknorris.io/jokes/random')
+ let data = await response.json();
+ console.log(data.value);
 
 }
 

@@ -8,9 +8,26 @@
  * Hints:
  * - make sure to use the correct headers and http method in the request
  */
+import fetch from 'node-fetch';
 
-function makeReservation() {
+
+async function makeReservation() {
   // YOUR CODE GOES IN HERE
+
+  const body = {
+    name: "John Doe",
+    numberOfPeople: 3
+  };
+  const url = 'https://reservation100-sandbox.mxapps.io/api/reservations'
+  const response = await fetch(url,{
+    method: 'post', 
+    body: JSON.stringify(body),
+    headers: {'Content-Type': 'application/json'}
+  });
+  const data = await response.json();
+  
+  console.log(data);
+
 }
 
 makeReservation();

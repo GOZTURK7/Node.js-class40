@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gokhan's Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css
+    " rel="stylesheet">
+
+</head>
+<body>
+    <h1 style="text-align:center">UPDATE POST</h1>
+
+    <form class="row g-3 d-flex justify-content-md-center" action="/update/posts" method="post">
+
+        <div class="col-md-6 p-5 offset-md-1" >
+          <label for="title" class="form-label">Enter An Exists Title To Search</label>
+          <input type="text" class="form-control" id="title" name="title">
+        </div>
+
+        <div class="col-md-6 p-5 offset-md-1">
+            <label for="content" class="form-label">Enter To Update The Content</label>
+            <input type="text" class="form-control" id="content" name="content">
+            
+            <div class="col-12 p-5 d-flex justify-content-md-center">
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+</html>
